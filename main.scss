@@ -7,6 +7,7 @@ $greyfont: #515151;
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -87,7 +88,7 @@ section.horizontal-banner {
 	img {
 		width: 100%;
 		max-width: 1200px;
-		margin: 1vh 5vw 1vh 5vw;
+		margin: 1vh auto ;
 	}
 
 }
@@ -177,11 +178,14 @@ section.news {
 
 		div {
 			transition: transform 2s;
+			overflow: hidden;
 		}
 
 		div:hover {
 			transform: scale(1.5);
 			background-color: white;
+			border: 1px black solid;
+    		overflow: hidden;
 		}
 
 		img {
@@ -192,8 +196,17 @@ section.news {
 
 }
 
+h1 {
+	font-size: 5em;
+	padding: 10vw 1vw;
+	text-align: center;
+}
+
 footer {
 	background-color: $bgnav;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
 	
 	img {
 		display: block;
@@ -210,6 +223,46 @@ footer {
 .deletedesktop {
 			display: none;
 		}
+
+.mobileorder1 {
+	order: 1;
+}
+
+.mobileorder2 {
+	order: 2;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.sidecontainer {
+		display: none;
+	}
+	section.news div.container div {
+		width: 48%;
+	}
+
+	section.news div.bigcontainer {
+		width: 100vw;
+	}
+
+	nav {
+		ul {
+			justify-content: center;
+		}
+		a {
+			font-size: 1.5em;
+		}
+	}
+	
+
+		.greybanner {
+			font-size: 1.5em;
+		}
+
+}
+
+
+
 
 @media (max-device-width: 480px) {
 	#headerbanner {
@@ -272,4 +325,5 @@ footer {
 				object-position: 100% 00%;
 			}
 		}
+
 }
