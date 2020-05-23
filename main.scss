@@ -1,4 +1,4 @@
-$bgnav: #5C191A;
+$bgnav: #1A1A1A;
 $bgheader: #571719;
 $grey: #DDDDDD;
 $greyfont: #515151;
@@ -65,7 +65,7 @@ nav {
 }
 
 section.horizontal-banner {
-	margin: 2vh 5vw 1vh 5vw;
+	margin: 2vh 5vw 2vh 5vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -87,13 +87,14 @@ section.horizontal-banner {
 	img {
 		width: 100%;
 		max-width: 1200px;
+		margin: 1vh 5vw 1vh 5vw;
 	}
 
 }
 
 
 section.news {
-		margin: 1vh 5vw 2vh 5vw;
+		margin: 1vh 5vw 1vh 5vw;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -106,7 +107,7 @@ section.news {
 	}
 
 	div.bigcontainer {
-		width: 78vw;
+		width: 77vw;
 	}
 
 
@@ -134,16 +135,19 @@ section.news {
 		flex-wrap: wrap;
 	}
 
-	div.container div {
+	div.container div{
 		margin: 1% 1% 1% 0;
 		position: relative;
 		width: 32%;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 	}
 
 	div.container div.article {
 		width: 48%;
+
+		p {
+			font-size: 1.5em;
+		}
 	}
 
 	div.container div:hover {
@@ -163,12 +167,109 @@ section.news {
 
 	img {
 		width: 100%;
+   		object-fit: contain
 	}
 	
 	div .sidecontainer {
 		width: 11vw;
-		padding: 1% 0 0 1%;
+		margin-top: 1%;
+		padding: 0;
+
+		div {
+			transition: transform 2s;
+		}
+
+		div:hover {
+			transform: scale(1.5);
+			background-color: white;
+		}
+
+		img {
+			width: 100%;
+   			object-fit: contain
+		}
 	}
 
 }
 
+footer {
+	background-color: $bgnav;
+	
+	img {
+		display: block;
+   		margin-left: auto;
+    	margin-right: 20px;
+	}
+
+	p {
+		color: white;
+		text-align: center;
+	}
+}
+
+.deletedesktop {
+			display: none;
+		}
+
+@media (max-device-width: 480px) {
+	#headerbanner {
+		display: none;
+	}
+	
+	.sidecontainer {
+		display: none;
+	}
+	
+	section.news div.container div {
+		width: 48%;
+	}
+
+	section.news div.bigcontainer {
+		width: 100vw;
+	}
+	#deletemobile {
+		display: none;
+	}
+	nav {
+		ul {
+			justify-content: center;
+		}
+		a {
+			font-size: 2em;
+		}
+	}
+
+	footer {
+
+		img {
+			margin-right: auto;
+		}
+
+		p {
+			font-size: 2em;
+			padding: 15px;
+		}
+	}
+	header, footer {
+		#logo {
+			width: 50vw;
+			padding: 25px;
+			}
+		}
+
+		.greybanner {
+			font-size: 2em;
+		}
+
+	#deletemobile {
+		display: none;
+		}
+	.deletedesktop {
+			display: block;
+			img {
+				max-height: 282px;
+				object-fit: cover!important;
+				object-position: 100% 00%;
+			}
+		}
+}
