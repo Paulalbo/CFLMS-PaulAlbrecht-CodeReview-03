@@ -1,0 +1,88 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif; }
+
+header {
+  background-color: #571719;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 15vh; }
+  header div {
+    align-self: center; }
+  header img {
+    padding: 5%; }
+  header #logo {
+    width: 20vw;
+    max-width: 400px; }
+  header #headerbanner {
+    width: 50vw;
+    max-width: 800px; }
+
+nav {
+  background-color: #5C191A; }
+  nav ul {
+    padding-left: 2%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; }
+  nav li {
+    padding: 0.5vw; }
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.5vw; }
+  nav a:hover {
+    background-color: white;
+    color: black; }
+
+section.news {
+  margin: 2vh 5vw; }
+  section.news div.Mothercontainer {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    max-width: 1200px; }
+  section.news div.bigcontainer {
+    width: 78vw; }
+  section.news div.greybanner {
+    background-color: #DDDDDD;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px; }
+  section.news #bannerinner {
+    margin: 1vh 1vh 1vh 0; }
+  section.news div.greybanner div {
+    font-size: 1.5em;
+    padding: 0 2%;
+    color: #515151; }
+  section.news div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  section.news div.container div {
+    margin: 1% 1% 1% 0;
+    position: relative;
+    max-width: 25vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  section.news div.container div:hover {
+    background-color: black;
+    opacity: 0.6; }
+  section.news p {
+    padding: 2%;
+    min-height: 25%;
+    bottom: 0;
+    position: absolute;
+    color: white;
+    background-color: black; }
+  section.news img {
+    width: 100%; }
+  section.news div .sidecontainer {
+    width: 11vw;
+    padding: 1% 0 0 1%; }
+    section.news div .sidecontainer img {
+      width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
