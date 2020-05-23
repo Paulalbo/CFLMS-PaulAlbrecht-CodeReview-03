@@ -64,8 +64,39 @@ nav {
 	}
 }
 
+section.horizontal-banner {
+	margin: 2vh 5vw 1vh 5vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	div.greybanner {
+		background-color: $grey; 
+		display: flex;
+		flex-direction: row;
+		flex-basis: 100%;
+		max-width: 1200px;
+	}
+
+	div.greybanner div  {
+		font-size: 1.5em;
+		padding: 0 2%;
+		color: $greyfont;
+	}
+
+	img {
+		width: 100%;
+		max-width: 1200px;
+	}
+
+}
+
+
 section.news {
-		margin: 2vh 5vw;
+		margin: 1vh 5vw 2vh 5vw;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 
 	div.Mothercontainer {
 		display: flex;
@@ -100,14 +131,19 @@ section.news {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	div.container div {
 		margin: 1% 1% 1% 0;
 		position: relative;
-		max-width: 25vw;
+		width: 32%;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+	}
+
+	div.container div.article {
+		width: 48%;
 	}
 
 	div.container div:hover {
@@ -118,6 +154,7 @@ section.news {
 	p {
 		padding: 2%;
 		min-height: 25%;
+		width: 96%;
 		bottom: 0;
 		position: absolute;
 		color: white;
@@ -131,10 +168,7 @@ section.news {
 	div .sidecontainer {
 		width: 11vw;
 		padding: 1% 0 0 1%;
-
-		img {
-			width: 100%;
-		}
 	}
 
 }
+
