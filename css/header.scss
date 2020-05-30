@@ -1,0 +1,137 @@
+$bgnav: #241C2B;
+$section: #495670;
+
+nav {
+	z-index: 2;
+	width: 100vw;
+	position: fixed;
+	background-color: $bgnav;
+	border-radius: 0 0 50% 50%;
+
+	
+	ul {
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: center;
+	}
+
+	li {
+		padding: 0.5vw;
+		width: 50vw;
+		box-shadow: 0 9px #999;
+		transition: transform 0.5s;
+
+	}
+
+
+	li:first-child {
+		text-align: right;
+
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 1.5em;
+		padding: 0.5vw;
+	}
+
+	li:hover {
+		background-color: $section;
+		cursor: pointer;
+		transform: scale(1.05);
+	}
+
+	li:hover a {
+		color: white;
+	}
+}
+
+header {
+	margin-top: -10vh;
+	background-image: url(../img/headerbg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	.container {
+		margin-top: 10vh;
+		z-index: 1;
+		background-color: white;
+		max-width: 800px;
+		width: 60vw;
+		border-radius: 50px;
+		opacity: 0.95;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	}
+
+	h1 {
+		font-size: 3em;
+		text-align: center;
+		padding: 10%;
+		opacity: 1;
+	}
+
+	table {
+		border-spacing: 20px;
+    	border-collapse: separate;
+		width: 80%;
+		margin: 1vh auto;
+
+		td {
+			border-bottom: 1px solid black;
+		}
+
+		input {
+			border: none;
+			width: 100%;
+		}
+
+		input:active {
+			text-align: center;
+			border: none;
+		}
+
+		select {
+			width: 90%;
+			border: none;
+		}
+	}
+
+	button {
+		padding:0.5em 1.5em;
+		border:0.16em solid $section;
+		text-decoration:none;
+		background-color: $section;
+		color: white;
+		text-align:center;
+		transition: all 0.2s;
+		border-radius:2em;
+	}
+
+	button:hover {
+			border-color: $bgnav;
+			cursor: pointer;
+			transform: scale(0.9);
+		}
+	#showresult {
+		padding: 5% 0;
+		background-color: white;
+		font-size: 1.5em;
+		text-align: center;
+		max-width: 800px;
+		width: 60vw;
+		border-radius: 50px;
+		opacity: 0.95;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
+
