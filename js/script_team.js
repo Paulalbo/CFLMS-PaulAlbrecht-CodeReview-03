@@ -1,32 +1,24 @@
-document.body.onload = addElement;
-
-function addElement () { 
-  // create a new div element 
-  var newDiv = document.createElement("div"); 
-  // and give it some content 
-  var newContent = document.createTextNode("Hi there and greetings!"); 
-  // add the text node to the newly created div
-  newDiv.appendChild(newContent);  
-
-  // add the newly created element and its content into the DOM 
-  var currentDiv = document.getElementById("div1"); 
-  document.body.insertBefore(newDiv, currentDiv); 
-}
-
-function showteam () {
+function showteam (){
 
   var teamMembers = [
-      {name:"Fran", email:"fran@index.com",image:"images/person1.png"},
-      {name:"Bill",email:"bill@index.com",image:"images/person2.png"},
-      {name:"Fritz", email:"fritz@index.com",image:"images/person3.png"}
+      {name:"Fran", email:"fran@index.com",image:"img/person1.jpg"},
+      {name:"Bill", email:"bill@index.com",image:"img/person2.jpg"},
+      {name:"Fritz", email:"fritz@index.com",image:"img/person3.jpg"},
+      {name:"Olivia", email:"olivia@index.com",image:"img/person4.jpg"}
   ];
 
-  for (;;)
 
+container = document.getElementById("teamcontainer");
 
-    var div = document.createElement('div');
+for (var i = 0; i < teamMembers.length; i++) {
+      var name = teamMembers[i].name;
+      var email = teamMembers[i].email;
+      var image = teamMembers[i].image;
 
+      let containerstart = "<div class=\"containerteam\">"
+      let containerend = "</p></div>"
 
-
-
+      container.innerHTML += containerstart + "<img src=\"" + image + "\"><br><p>" + "Name: " + name + "<br> E-mail: " + email + "<br>" + containerend;
+      
+ }
 }

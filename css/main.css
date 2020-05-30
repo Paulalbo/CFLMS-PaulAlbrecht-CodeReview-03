@@ -94,6 +94,54 @@ header {
     opacity: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
+header.team {
+  margin-top: -10vh;
+  background-image: url(../img/team.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end; }
+  header.team .containerteam {
+    width: 25vw;
+    z-index: 1;
+    background-color: white;
+    border-radius: 50px;
+    opacity: 0.95;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  header.team img {
+    width: 100%; }
+  header.team h1 {
+    font-size: 3em;
+    text-align: center;
+    border: none; }
+  header.team p {
+    font-size: 1em;
+    padding: 5%; }
+
+button {
+  padding: 0.5em 1.5em;
+  border: 0.16em solid #241C2B;
+  text-decoration: none;
+  background-color: #241C2B;
+  color: white;
+  text-align: center;
+  transition: all 0.2s;
+  border-radius: 2em; }
+
+button:hover {
+  border-color: #241C2B;
+  cursor: pointer;
+  transform: scale(0.9); }
+
+.banner {
+  height: 10vh; }
+
 * {
   padding: 0px;
   margin: 0px;
