@@ -5,7 +5,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<title>newspaper CF</title>
 </head>
-<body>
+<body onload="showteam()">
 	<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -17,45 +17,14 @@
 	<header>
 	
 	<div class="container">
-		<h1>Great coverage begins <nobr>with a custom quote</nobr></h1>
-		<table>
-			<tr>
-				<td>
-					<label><strong>Your name:</strong></label><br>
-					<input id="name" type="text" name="name"></td>
-				<td>
-					<label><strong>Age:</strong></label><br>
-					<input id="age" type="number" name="age">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label><strong>Country</strong></label>
-					 <select id="cars" name="cars">
-					 	<option selected>Choose your Country</option>
-    					<option value="austria">Austria</option>
-					    <option value="hungary">Hungary</option>
-					    <option value="greece">Greece</option>
-					</select>
-				</td>
-				<td>
-					<label><strong>Horsepower of your car:</strong></label><br>
-					<input id="hp" type="number" name="horsepower">
-				</td>
-			</tr>
-			<tr>
-				<script type="text/javascript" src="js/script.js"></script>
-				<th colspan="2"><button onclick="calculateInsurance()">calculate</button></th>
-			</tr>
-		</table>
-	<div id="showresult"><p>Let's see how much you will pay!</p></div>
-	</div>
+		<h1>Team</nobr></h1>
+		
 
 	</header>
 
 	<section class="banner">
-		<h1>Un-complicating car coverage</h1>
-		<h2>Understanding your coverage options shouldn't be so hard.<br> We'll guide you through available coverage types, starting with who and what is coverd.</h2>
+		<h1>Want to become part of our Team?</h1>
+		<button onclick="calculateInsurance()">Joiin now</button>
 	</section>
 
 	<section class="boxes">

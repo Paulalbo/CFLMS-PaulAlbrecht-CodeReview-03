@@ -24,7 +24,7 @@ nav {
   nav li:hover {
     background-color: #495670;
     cursor: pointer;
-    transform: scale(1.05); }
+    transform: scaleY(0.95); }
   nav li:hover a {
     color: white; }
 
@@ -91,7 +91,7 @@ header {
     max-width: 800px;
     width: 60vw;
     border-radius: 50px;
-    opacity: 0.95;
+    opacity: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 /*# sourceMappingURL=header.css.map */

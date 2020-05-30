@@ -17,25 +17,10 @@ function calculateInsurance(){
         
         
         if (document.getElementById('cars').value == "greece") {
-          var total = Math.round(yourHp * 150 / (yourAge +3) + 50);
+          var total = Math.round(yourHp * 150 / (yourAge + 3) + 50);
         }
 
 
         document.getElementById("showresult").innerHTML = "Dear <strong>" + yourName + "</strong> your Insurance will come to a total of <strong>" + total + " €</strong>.<br>";
-
-
-
-if (firstName.length > 3) {
-            document.getElementById("firstname").setAttribute("class", "aproved");
-        }
-        else{
-            document.getElementById("firstname").setAttribute("class", "denied");
-        }
-
-
-
-
-
-
 
 }

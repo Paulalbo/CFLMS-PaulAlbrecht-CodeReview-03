@@ -1,12 +1,14 @@
 $bgnav: #241C2B;
 $section: #495670;
 
+
 nav {
 	z-index: 2;
 	width: 100vw;
 	position: fixed;
 	background-color: $bgnav;
 	border-radius: 0 0 50% 50%;
+
 
 	
 	ul {
@@ -40,7 +42,7 @@ nav {
 	li:hover {
 		background-color: $section;
 		cursor: pointer;
-		transform: scale(1.05);
+		transform: scaleY(0.95);
 	}
 
 	li:hover a {
@@ -130,7 +132,7 @@ header {
 		max-width: 800px;
 		width: 60vw;
 		border-radius: 50px;
-		opacity: 0.95;
+		opacity: 1;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 }
