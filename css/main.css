@@ -19,7 +19,7 @@ nav {
   nav a {
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 0.5vw; }
   nav li:hover {
     background-color: #495670;
@@ -95,20 +95,21 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 header.team {
-  margin-top: -10vh;
   background-image: url(../img/team.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end; }
   header.team .containerteam {
-    width: 25vw;
+    bottom: 0;
+    width: 20vw;
+    margin: 3%;
     z-index: 1;
     background-color: white;
     border-radius: 50px;
@@ -116,32 +117,38 @@ header.team {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   header.team img {
     width: 100%; }
-  header.team h1 {
+  header.team p {
+    font-size: 1.5em;
+    padding: 5%; }
+
+section.bannerteam {
+  margin: 10vh;
+  text-align: center;
+  height: 10vh; }
+  section.bannerteam h1 {
     font-size: 3em;
     text-align: center;
     border: none; }
-  header.team p {
-    font-size: 1em;
-    padding: 5%; }
+  section.bannerteam button {
+    padding: 0.5em 1.5em;
+    border: 0.16em solid #241C2B;
+    background-color: #241C2B;
+    color: white;
+    text-align: center;
+    transition: all 0.2s;
+    border-radius: 2em; }
+  section.bannerteam button:hover {
+    border-color: #241C2B;
+    cursor: pointer;
+    transform: scale(0.9); }
 
-button {
-  padding: 0.5em 1.5em;
-  border: 0.16em solid #241C2B;
-  text-decoration: none;
-  background-color: #241C2B;
-  color: white;
-  text-align: center;
-  transition: all 0.2s;
-  border-radius: 2em; }
-
-button:hover {
-  border-color: #241C2B;
-  cursor: pointer;
-  transform: scale(0.9); }
-
-.banner {
-  height: 10vh; }
-
+@media (max-device-width: 480px) {
+  header.team {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; }
+    header.team .containerteam {
+      width: 80vw; } }
 * {
   padding: 0px;
   margin: 0px;
@@ -208,5 +215,12 @@ footer {
   footer p {
     color: white;
     text-align: center; }
+
+@media (max-device-width: 480px) {
+  section.boxes {
+    flex-direction: column; }
+
+  #videoBG {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -95,3 +95,14 @@ footer {
 		text-align: center;
 	}
 }
+
+
+
+@media (max-device-width: 480px) {
+section.boxes {
+	flex-direction: column;
+}
+#videoBG {
+	display: none;
+}
+}
